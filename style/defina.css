@@ -1,0 +1,155 @@
+/* BASE */
+@font-face{
+    font-family: HelveticaThn;
+    src: local("☺︎"), url(../assets/HelveticaThn.ttf) format('truetype'), url(../assets/HelveticaThn.woff) format('woff');
+}
+
+@font-face{
+    font-family: HelveticaBlk;
+    src: local("☺︎"), url(../assets/HelveticaBlk.ttf) format('truetype'), url(../assets/HelveticaBlk.woff) format('woff');
+}
+
+@font-face{
+    font-family: HelveticaNw;
+    src: local("☺︎"), url(../assets/HelveticaNw.ttf) format('truetype'), url(../assets/HelveticaNw.woff) format('woff');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: arial;
+    width: 100%;
+    min-height: 100%;
+    background: #000;
+    position: relative;
+    background-image: -webkit-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.2)), url('../imgs/background.jpg');
+    background-image: -moz-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.2)), url('../imgs/background.jpg');
+    background-image: -o-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.2)), url('../imgs/background.jpg');
+    background-image: -ms-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.2)), url('../imgs/background.jpg');
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.2)), url('../imgs/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    width: 430px;
+    margin: auto;
+    position: absolute;
+    top: -100px; left: 0; right: 0; bottom: 0;
+}
+
+.region {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+a:link, a:hover, a:visited, a:active {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    text-shadow: 1px 0px 1px #c1c1c1;
+}
+a:active {
+    color: #c1c1c1;
+}
+
+/* HEADER */
+
+h3, h2 {
+    float: left;
+    font-size: 22px;
+    padding:0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2.band-ep-title {
+    margin-top: 6px;
+    margin-left: 6px;
+    font-family: HelveticaNw;
+    
+}
+
+h3.band-name {
+    font-family: HelveticaBlk;
+    margin: 6px;
+}
+
+/* CONTET */
+
+.album-image, .album-info {
+    float:left;
+}
+
+.album-image {
+    width: 110px;
+    height: 110px;
+}
+
+.album-info {
+    width: 300px;
+    height: 110px;
+    margin-left: 10px;
+}
+
+.album-info h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.album-info h1 {
+    font-family: HelveticaBlk;
+    margin-top: 8px;
+    font-size: 41px;
+    line-height: 41px;
+}
+
+.album-info h2 {
+    font-family: HelveticaThn, arial;
+    font-size: 34px;
+    line-height: 34px;
+}
+
+.album-info h3 {
+    font-family: HelveticaNw;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px;
+}
+
+.social-defina {
+    float: left;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    margin-left: 18px;
+}
+
+.youtube {
+    background-image: url('../imgs/youtube-icon.png');
+    margin-left: 0;
+}
+
+.facebook {
+    background-image: url('../imgs/facebook-icon.png');
+}
+
+.soundcloud {
+    background-image: url('../imgs/soundcloud-icon.png');
+    margin-right: 18px;
+}
+
+.contact-image {
+    float: left;
+    width: 35px;
+    width: 35px;
+}

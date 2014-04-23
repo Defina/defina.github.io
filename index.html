@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="style/defina.css" type="text/css" />
+    <script type="application/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+    <section class="content">
+        <header class="region">
+            <h3 class="band-name">Defina</h3><h2>|</h2><h2 class="band-ep-title">OQUEOSOLHOSNÃOVEEM</h2>
+        </header>
+        <a href="assets/OQUEOSOLHOSNAOVEEM.zip">
+            <main class="region">
+                <img class="album-image" src="imgs/oqueosolhosnaoveem.jpg" />
+                <div class="album-info">
+                    <h1>CLIQUE AQUI</h1>
+                    <h2>PARA BAIXAR O EP</h2>
+                    <h3>OQUEOSOLHOSNÃOVEEM</h3>
+                </div>
+            </main>
+        </a>
+        <footer class="region">
+            <a href="https://www.youtube.com/user/bandadefina" target="_blank">
+                <div class="social-defina youtube"></div>
+            </a>
+            <a href="https://www.facebook.com/bandadefina" target="_blank">
+                <div class="social-defina facebook"></div>
+            </a>
+            <a href="https://soundcloud.com/bandadefina" target="_blank">
+                <div class="social-defina soundcloud"></div>
+            </a>
+            
+            <div class="contact-defina">
+                <img class="contact-image" src="imgs/phone.png" />
+                <a href="mailto:fhtproducoes@hotmail.com">fhtproducoes@hotmail.com</a><br />
+                (51) <a href="tel:05193540021">9354.0021</a> | (51) <a href="tel:05135511166">3551.1166</a>
+            </div>
+        </footer>
+    </section>
+    
+    <script type="application/javascript">
+        var lastHeight = 0;
+        
+        /**
+         * Função para dar o resize no site.
+         */
+        function resizeDefina(height) {
+            if(lastHeight != height) {
+                lastHeight = height;
+                $("body").css("height", height);
+            }
+        }
+        
+        $(document).ready(function() {
+            resizeDefina($(window).height());
+            $("section").css("height", $("header").innerHeight() + $("main").innerHeight() + $("footer").innerHeight());
+            
+            $(window).resize(function() {
+                resizeDefina($(this).height());
+            });
+        });
+    </script>
+</body>
+</html>
