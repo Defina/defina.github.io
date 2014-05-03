@@ -28,6 +28,7 @@ body {
     background-image: -o-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.2)), url('../imgs/background.jpg');
     background-image: -ms-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.2)), url('../imgs/background.jpg');
     background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.2)), url('../imgs/background.jpg');
+    
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
